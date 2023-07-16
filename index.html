@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid practise</title>
+    <style>
+        img{
+            width:100%;
+            height:100%;
+            
+        }
+        .row{
+            height:400px;
+            display:flex;
+            gap:5px;
+            margin-bottom: 5px;;
+            
+        }
+        .row>div{
+            flex:1;
+           
+        }
+        .vertical-collage {
+            height:50%;
+            height:calc((100%-5px)/2);
+        }
+        .square-collage {
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:5px;
+        }
+        
+           
+    </style>
+</head>
+<body>
+    <section>
+    <div class="row">
+        <img src="images/A.jpg">
+    </div>
+    <div class="row">
+    <div>
+        <img src="images/B.jpg">
+    </div>
+    <div>
+        <img src="images/C.jpg">
+    </div>
+    <div class="vertical-collage">
+        <img src="images/D.jpg">
+        <img src="images/E.jpg">
+    </div>
+    </div>
+    <div class="row">
+    <div>
+        <img src="images/F.jpg">
+    </div>
+    <div class="square-collage">
+        <img src="images/G.jpg">
+        <img src="images/G.jpg">
+        <img src="images/G.jpg">
+        <img src="images/G.jpg">
+        
+        
+    </div>
+    <div>
+        <img src="images/H.jpg"> 
+    </div>
+</div>
+</section>
+   
+</body>
+</html>
